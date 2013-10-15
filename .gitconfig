@@ -1,8 +1,8 @@
 [user]
-  name = Jason Campbell
-  email = jason@artifact.sh
+	name = Evan Campbell
+	email = evan@indestructibleart.com
 [github]
-  user = jxson
+  user = darthburrit0
 [core]
   excludesfile = ~/.gitignore
   quotepath = false
@@ -24,19 +24,5 @@
   untracked = cyan
 [branch]
   autosetupmerge = true
-[merge]
-  # tool = opendiff
-	tool = Kaleidoscope
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[diff]
-	tool = Kaleidoscope
-[difftool]
-	prompt = false
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-[mergetool]
-	prompt = false
 [push]
 	default = simple
