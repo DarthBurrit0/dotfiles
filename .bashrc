@@ -41,17 +41,9 @@ PS1=$COLOR_LIGHT_PURPLE'\u'$COLOR_NONE' at '$COLOR_ELECTRIC_YELLOW'\h'$COLOR_NON
 
 export PATH=/usr/local/bin:/usr/local/share/python:/usr/local/opt/ruby/bin:$PATH
 
-source /usr/local/Cellar/autoenv/0.1.0/activate.sh
-autoenv_init # Make sure .env gets picked up when new terminal tabs are opened
-
 alias grep='grep --color=auto'
 alias ls='ls -G'
 alias rm='rm -i'
 
-source ~/.to/to.sh
 source ~/.nvm/nvm.sh
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
